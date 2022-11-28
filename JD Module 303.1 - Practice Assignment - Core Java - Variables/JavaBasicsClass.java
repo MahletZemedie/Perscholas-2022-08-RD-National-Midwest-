@@ -70,7 +70,9 @@ public class JavaBasicsClass {
 		
 		final int salesTax = 15;
 		
-		totalSale = subtotal - (subtotal * salesTax)/100 ;
+		
+		
+		totalSale = subtotal +(subtotal * salesTax)/100 ;
 		
 		System.out.println("subtotal: " + subtotal);
 		System.out.println("total_sale: " +
