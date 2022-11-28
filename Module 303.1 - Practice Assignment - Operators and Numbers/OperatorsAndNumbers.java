@@ -1,5 +1,10 @@
 package com.perscholas.java_basics;
 
+/*
+ * Written by : Mahlet Zemedie
+ * Date : 11/28/2022
+ */
+
 public class OperatorsAndNumbers {
 	
 	public static void main(String [] args) {

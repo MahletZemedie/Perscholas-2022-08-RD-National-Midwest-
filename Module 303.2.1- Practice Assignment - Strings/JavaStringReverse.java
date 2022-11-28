@@ -2,6 +2,12 @@ package com.perscholas.java_basics;
 
 import java.util.Scanner;
 
+/**
+ * Written by : Mahlet Zemedie
+ * Date : 11/28/2022
+ * @see the question <a href="https://www.hackerrank.com/challenges/java-string-reverse/problem" </a>
+ */
+
 public class JavaStringReverse {
 	
 public static void main(String[] args) {
