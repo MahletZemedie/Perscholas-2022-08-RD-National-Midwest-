@@ -7,6 +7,19 @@ package com.perscholas.java_basics;
 
 public class OperatorsAndNumbers {
 	
+	public static String convertIntegerToBinary(int n) {
+		
+		StringBuilder binary = new StringBuilder();
+		int remainder;
+		
+	    while (n > 0) {
+	        remainder = n % 2;
+	        binary.append(remainder);
+	        n /= 2;
+	    }
+	    return binary.reverse().toString();
+	}
+	
 	public static void main(String [] args) {
 		
 		/*
@@ -17,12 +30,12 @@ public class OperatorsAndNumbers {
 		 */
 		
 		System.out.println("******Int to Binary******");
-		System.out.println(Integer.toBinaryString(1));
-		System.out.println(Integer.toBinaryString(8));
-		System.out.println(Integer.toBinaryString(33));
-		System.out.println(Integer.toBinaryString(78));
-		System.out.println(Integer.toBinaryString(787));
-		System.out.println(Integer.toBinaryString(33987));
+		System.out.println(convertIntegerToBinary(1));
+		System.out.println(convertIntegerToBinary(8));
+		System.out.println(convertIntegerToBinary(33));
+		System.out.println(convertIntegerToBinary(78));
+		System.out.println(convertIntegerToBinary(787));
+		System.out.println(convertIntegerToBinary(33987));
 		System.out.println("--------------------------------------------------------------------------");
 		
 		/*
@@ -31,6 +44,7 @@ public class OperatorsAndNumbers {
 		 * as this will hinder the learning process and your understanding of the concept. 
 		 * However, you may check your answers using Java methods.
 		 */
+		
 		
 		System.out.println("******Binary to Decimal******");
 		System.out.println(Integer.parseInt("0010",2));
