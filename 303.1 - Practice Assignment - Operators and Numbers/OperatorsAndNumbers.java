@@ -20,6 +20,15 @@ public class OperatorsAndNumbers {
 	    return binary.reverse().toString();
 	}
 	
+	public static int binaryToInteger(String binary) {
+	    char[] numbers = binary.toCharArray();
+	    int result = 0;
+	    for(int i=numbers.length - 1; i>=0; i--)
+	        if(numbers[i]=='1')
+	            result += Math.pow(2, (numbers.length-i - 1));
+	    return result;
+	}
+	
 	public static void main(String [] args) {
 		
 		/*
@@ -45,14 +54,13 @@ public class OperatorsAndNumbers {
 		 * However, you may check your answers using Java methods.
 		 */
 		
-		
 		System.out.println("******Binary to Decimal******");
-		System.out.println(Integer.parseInt("0010",2));
-		System.out.println(Integer.parseInt("1001",2)); 
-		System.out.println(Integer.parseInt("00110100",2)); 
-		System.out.println(Integer.parseInt("01110010",2)); 
-		System.out.println(Integer.parseInt("001000011111" + "",2)); 
-		System.out.println(Integer.parseInt("0010110001100111" + "",2)); 
+		System.out.println(binaryToInteger("0010"));
+		System.out.println(binaryToInteger("1001")); 
+		System.out.println(binaryToInteger("00110100")); 
+		System.out.println(binaryToInteger("01110010")); 
+		System.out.println(binaryToInteger("001000011111")); 
+		System.out.println(binaryToInteger("0010110001100111")); 
 		
 		System.out.println("--------------------------------------------------------------------------");
 		/*Write a program that declares an integer a variable x and assigns the value 2 to it 
